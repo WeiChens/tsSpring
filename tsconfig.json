@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "target": "es2017", //打包生成语法
+    "module": "CommonJS", //组织代码方式
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "jsx": "react",
+    "types": [
+      "node"
+    ],
+    "allowJs": true,
+    "moduleResolution": "node", //模块解决方案
+    "experimentalDecorators": true, //开启装饰器定义
+    "allowSyntheticDefaultImports": true, //允许node使用import语法
+    "lib": [
+      "ES2019"
+    ],
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    //所有严格检查的总开关
+    "strict": true,
+    "alwaysStrict": true,
+    //不允许隐式的any类型
+    "noImplicitAny": true,
+    //不允许声明不明确的this
+    "noImplicitThis": true,
+    //严格检查空值
+    "strictNullChecks": false,
+    "baseUrl": "."
+  },
+  "include": [
+    "./src/**/*",
+    "test"
+  ],
+  "exclude": [
+    "./dist/*"
+  ]
+}

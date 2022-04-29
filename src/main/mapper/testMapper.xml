@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper SYSTEM "http://120.79.93.127:8081/file/down/lib/mybatis.dtd">
+<mapper namespace="TestMapper">
+    <select id="getUserById">
+        select * from `user` where `id` = #{0}
+    </select>
+    <insert id="addUser">
+        insert into `user`(id,name,age) value(#{0},#{1},#{2})
+    </insert>
+    <update id="updateUser">
+        update `user` set name=#{1},age=#{2} where id = #{0}
+    </update>
+    <delete id="delUser">
+        delete from `user` where id = #{0}
+    </delete>
+
+</mapper>
